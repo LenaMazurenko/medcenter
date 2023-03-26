@@ -1,18 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import ReactDOM from "react-dom/client";
-import "./index.css";
+import ReactDOM from "react-dom";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
             <App />
         </BrowserRouter>
-    </React.StrictMode>
+    </React.StrictMode>,
+    document.getElementById("root")
 );
-
-reportWebVitals();
